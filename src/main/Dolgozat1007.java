@@ -1,20 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package main;
 
-/**
- *
- * @author horvath.n.atena
- */
+import controller.KonzolVezerlo;
+import modell.KonzolModell;
+import view.KonzolNezet;
+
 public class Dolgozat1007 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        KonzolModell modell = new KonzolModell();
+        KonzolNezet nezet = new KonzolNezet();
+        
+        new KonzolVezerlo(modell, nezet);
     }
     
 }
